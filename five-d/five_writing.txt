@@ -1,0 +1,24 @@
+For N = 60000:
+
+correct value would be
+\frac{60000(1+60000)}{2}=1800030000
+This matches with my output.
+
+
+For N = 65535:
+
+correct value would be
+\frac{65535(1+65535)}{2}=2147450880
+This matches with my output.
+
+
+For N = 65536:
+
+correct value would be
+\frac{65536(1+65536)}{2*10^9}=2.147516416*10^9=2147516416
+[Note that I have written this equation as such because the calculator I was using will return the answer as 214751642; it will only give the right answer if i divide by 10^9 and then multiply it by 10^9 after.]
+the original version of the code (in five.c) returns
+-2147450880
+the debugged version of the code (in five_debugging.c) returns
+2147516416
+The reason five.c does not return the correct values is because sum is not allocated as a long int value. Granted, this will still not work for values of N\geq 6074000000, but it works for our purposes. For values N\geq 6074000000, then the function would need to be redefined as recursive.

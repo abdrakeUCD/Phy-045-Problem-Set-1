@@ -1,0 +1,9 @@
+For a=0.3, N=10
+The correct answer is \frac{1-0.3^{10}}{1-0.3}, which is approx 1.428562993 (by Desmos' scientific calculator)
+My code outputs 1.4285629930000001142076371252187527716159820556640625000000000
+
+For a=0.8, N=10
+The correct answer is \frac{1-0.8^{10}}{1-0.8}, which is approx 4.463129088 (by Desmos' scientific calculator)
+My code outputs 4.4631290880000014098527572059538215398788452148437500000000000
+
+The code outputs the correct answer.
